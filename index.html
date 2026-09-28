@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>家計マスター</title>
@@ -160,13 +160,21 @@ nav button.on{color:var(--gold)}
   transition:.25s; z-index:200; white-space:nowrap;
 }
 .toast.on{opacity:1; transform:translateX(-50%) translateY(0)}
+
+/* 明るい家計ダッシュボード */
+:root{--bg:#f5f6f8;--card:#fff;--card2:#f6f7f9;--line:#e7e9ee;--text:#252d3b;--muted:#647083;--gold:#dd650d;--red:#c64646;--green:#16816c;color-scheme:light}
+body{font-size:16px;line-height:1.65}header{max-width:1200px;margin:auto;padding:26px 24px 18px;align-items:center;justify-content:space-between;flex-wrap:wrap}header h1{font-size:23px;letter-spacing:-.04em}header .sub{font-size:12px}main,.months{max-width:1200px;margin:auto}main{padding:8px 24px 28px}.months{padding:0 24px 14px}.card{padding:24px;border-radius:18px;box-shadow:0 3px 12px #22334d04;margin-bottom:20px}.card h2{font-size:16px;letter-spacing:0;color:var(--text);margin-bottom:18px}.btn{font-size:15px;min-height:46px;border-radius:10px;padding:12px 16px}.btn-gold{color:white}.btn-ghost{background:white}.btn:focus-visible,button:focus-visible{outline:3px solid #2075cd;outline-offset:3px}.mchip{font-size:14px;padding:9px 16px;background:white;border-radius:10px}.mchip.on,.genre-chips button.on{background:#fff0e3;color:#af4d09;border-color:#edbc96}.genre-chips button{border-radius:8px;background:white;font-size:14px}.tx{padding:15px 0}.tx .store{font-size:15px}.tx .meta{font-size:12px;margin-top:4px}.tx .amt{font-size:17px}.tx:hover{background:#fafbfc}.g-name{font-size:14px}.g-amt{font-size:15px}.gauge{padding:15px 0}.g-head{gap:10px;flex-wrap:wrap}.g-bar{height:8px}.g-over{box-shadow:none}.legend div{font-size:12px}.empty{font-size:15px}.goal-row{padding:12px 0}.comment-line{font-size:14px}.modal{max-width:520px}.modal input,.addform input,.addform select,input[type=month],input[type=search]{min-height:46px;max-width:100%;min-width:0;font:inherit;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:9px;color:var(--text)}.modal label{display:block;margin:12px 0}.modal label input{display:block;width:100%}.addform{margin-top:15px}.addform label{font-size:13px;color:var(--muted);display:grid;gap:5px}.addform label input,.addform label select{width:100%}nav{background:#ffffffed;box-shadow:0 -4px 20px #22334d06}nav button{font-size:12px;padding:11px 4px;min-height:66px}nav button.on{color:#c2580c;background:#fff8f1}nav button .ico{font-size:21px}.toast{color:white;white-space:normal;text-align:center;max-width:90vw;width:max-content}.page-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:6px 0 20px;flex-wrap:wrap}.page-heading h2{font-size:25px;letter-spacing:-.03em}.eyebrow{font-size:12px;color:var(--muted);margin-bottom:3px}.quick-actions{display:flex;gap:8px;flex-wrap:wrap}.quick-actions .btn{width:auto;margin:0}.summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:20px}.summary-card{padding:22px;background:#fff;border:1px solid var(--line);border-radius:16px;min-width:0}.summary-card.balance{background:#fff6eb;border-color:#f1d7bc}.summary-label{font-size:14px;color:var(--muted)}.summary-value{font-size:clamp(23px,3.5vw,34px);font-weight:800;letter-spacing:-.04em;margin:6px 0;overflow-wrap:anywhere}.summary-foot{font-size:12px;color:var(--muted)}.positive{color:var(--green)}.negative{color:var(--red)}.dashboard-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;align-items:start}.dashboard-grid>.card{min-width:0}.wide{grid-column:1/-1}.card-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.card-heading h2{margin:0}.text-link{color:var(--gold);background:none;border:none;font:inherit;font-size:14px;cursor:pointer;padding:8px}.budget-top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.budget-big{font-size:28px;font-weight:800}.budget-track{height:12px;background:#eceff3;border-radius:8px;overflow:hidden;margin:16px 0 10px}.budget-track>span{display:block;height:100%;border-radius:8px}.budget-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:13px;flex-wrap:wrap}.split-chart{display:flex;align-items:center;gap:24px}.donut{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}.donut-hole{width:128px;height:128px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column}.donut-hole small{color:var(--muted);font-size:12px}.donut-hole strong{font-size:18px}.category-list{flex:1;min-width:0}.category-row{display:flex;width:100%;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;background:none;border:none;border-bottom:1px solid var(--line);font:inherit;font-size:14px;text-align:left;cursor:pointer;color:var(--text)}.category-row>span{display:flex;align-items:center;gap:8px}.category-row strong{white-space:nowrap}.note{font-size:13px;color:var(--muted);margin-top:12px}.welcome{padding:36px;background:linear-gradient(115deg,#fff7ec,#fff);border:1px solid #f0ddc4;border-radius:18px;margin-bottom:20px}.welcome h2{font-size:27px;margin-bottom:12px}.welcome p{color:var(--muted);margin-bottom:24px}.welcome .quick-actions{margin-top:20px}details.card summary{font-weight:700;cursor:pointer}details.card[open] summary{margin-bottom:18px}.search-row{margin-bottom:18px}.search-row input{width:100%}.section-title{font-size:23px;margin:6px 0 20px}.danger-area{border-color:#edd7d7}.section.on#sec-set{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.section.on#sec-graph{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.section-title{grid-column:1/-1}
+@media(min-width:1100px){body{padding-left:190px;padding-bottom:0}nav{top:0;right:auto;width:190px;bottom:0;display:flex;flex-direction:column;justify-content:flex-start;padding:98px 14px 20px;border-top:0;border-right:1px solid var(--line)}nav:before{content:'HOUSEHOLD';position:absolute;top:36px;left:25px;font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--muted)}nav button{flex:0 0 auto;display:flex;align-items:center;gap:12px;text-align:left;padding:14px 16px;font-size:15px;border-radius:10px;margin-bottom:8px}nav button .ico{margin:0}header{padding-top:30px}.overlay{align-items:center}.toast{bottom:30px}}
+@media(max-width:760px){header{padding:20px 16px 14px}header .sub{width:100%;font-size:12px}main{padding:6px 16px 20px}.months{padding:0 16px 10px}.dashboard-grid{grid-template-columns:1fr;gap:0}.summary-grid{gap:8px}.summary-card{padding:14px 10px}.summary-value{font-size:21px}.summary-label{font-size:13px}.summary-foot{font-size:12px}.card{padding:19px}.section.on#sec-set,.section.on#sec-graph{display:block}.split-chart{gap:16px}.donut{width:136px;height:136px}.donut-hole{width:104px;height:104px}.donut-hole strong{font-size:16px}.category-row{font-size:13px}.welcome{padding:24px}.page-heading h2{font-size:23px}.quick-actions .btn{font-size:14px}}
+@media(max-width:380px){.summary-grid{grid-template-columns:1fr 1fr}.summary-card.balance{grid-column:1/-1}.split-chart{flex-direction:column}.category-list{width:100%}}
+
 </style>
 </head>
 <body><noscript><p style="padding:20px">この画面ではアプリを操作できません。SafariなどのブラウザでURLを開いてください。</p></noscript>
 
 <header>
   <h1>家計<span>マスター</span></h1>
-  <div class="sub">データはこのブラウザに保存・端末間の移行はバックアップから</div>
+  <div class="sub">毎月のお金の流れを、ひと目で。</div>
 </header>
 
 <div class="months" id="monthChips"></div>
@@ -178,7 +186,7 @@ nav button.on{color:var(--gold)}
   </section>
 
   <!-- グラフ -->
-  <section class="section" id="sec-graph">
+  <section class="section" id="sec-graph"><h2 class="section-title">収支レポート</h2>
     <div class="card">
       <h2>収入と支出</h2>
       <div class="chart-wrap" id="incExpChart"></div>
@@ -197,7 +205,7 @@ nav button.on{color:var(--gold)}
       <div class="legend" id="chartLegend"></div>
     </div>
     <div class="card">
-      <h2>目標のあるジャンルの月次損益</h2>
+      <h2>カテゴリ予算と支出の比較</h2>
       <div class="genre-chips" id="goalPnlChips" style="margin-bottom:10px"></div>
       <div id="goalPnlBody"></div>
       <div class="legend" style="margin-top:10px">
@@ -212,7 +220,7 @@ nav button.on{color:var(--gold)}
   </section>
 
   <!-- 明細 -->
-  <section class="section" id="sec-list">
+  <section class="section" id="sec-list"><h2 class="section-title">明細・入力</h2>
     <div style="display:flex;gap:8px;margin-bottom:14px">
       <button id="modeExpenseBtn" class="mchip on" style="flex:1;text-align:center">💸 支出</button>
       <button id="modeIncomeBtn" class="mchip" style="flex:1;text-align:center">💰 収入</button>
@@ -222,16 +230,16 @@ nav button.on{color:var(--gold)}
       <div class="card">
         <h2>支出を追加</h2><label>登録先の支払月<input type="month" id="addMonth"></label>
         <div class="addform">
-          <input type="date" id="addDate">
-          <select id="addGenre"></select>
-          <input type="text" id="addStore" placeholder="店名・内容" class="full">
-          <input type="text" id="addAmt" inputmode="numeric" placeholder="金額(円)">
-          <select id="addSrc"><option value="クレカ">💳 クレカ</option><option value="銀行">🏦 銀行</option></select>
+          <label>利用日<input type="date" id="addDate"></label>
+          <label>カテゴリ<select id="addGenre"></select></label>
+          <label class="full">店名・内容<input type="text" id="addStore" placeholder="店名・内容" class="full"></label>
+          <label>金額（円）<input type="text" id="addAmt" inputmode="numeric" placeholder="金額(円)"></label>
+          <label>支払方法<select id="addSrc"><option value="クレカ">💳 クレカ</option><option value="銀行">🏦 銀行</option></select></label>
           <button class="btn btn-gold full" id="addBtn">追加</button>
         </div>
       </div>
       <div class="card">
-        <h2 id="listTitle">明細</h2>
+        <h2 id="listTitle">明細</h2><div class="search-row"><input type="search" id="txSearch" placeholder="店名・メモで検索" aria-label="支出明細を検索"></div>
         <div class="genre-chips" id="srcFilterChips" style="margin-bottom:8px"></div>
         <div class="genre-chips" id="listFilterChips" style="margin-bottom:8px"></div>
         <div id="txList"></div>
@@ -242,10 +250,10 @@ nav button.on{color:var(--gold)}
       <div class="card">
         <h2>収入を追加</h2><label>登録先の月<input type="month" id="incMonth"></label>
         <div class="addform">
-          <input type="date" id="incDate">
-          <select id="incType"></select>
-          <input type="text" id="incSource" placeholder="内容(会社名など)" class="full">
-          <input type="text" id="incAmt" inputmode="numeric" placeholder="金額(円)">
+          <label>入金日<input type="date" id="incDate"></label>
+          <label>収入の種類<select id="incType"></select></label>
+          <label class="full">勤務先・内容<input type="text" id="incSource" placeholder="内容(会社名など)" class="full"></label>
+          <label>金額（円）<input type="text" id="incAmt" inputmode="numeric" placeholder="金額(円)"></label>
           <button class="btn btn-gold full" id="incAddBtn">追加</button>
         </div>
       </div>
@@ -257,24 +265,24 @@ nav button.on{color:var(--gold)}
   </section>
 
   <!-- 設定 -->
-  <section class="section" id="sec-set">
+  <section class="section" id="sec-set"><h2 class="section-title">予算とデータ管理</h2>
     <div class="card">
-      <h2>月全体の目標(ジャンルとは別)</h2>
+      <h2>毎月の生活費予算</h2>
       <p style="font-size:12px;color:var(--muted);margin-bottom:10px">ジャンルごとの目標とは独立して、月の支出合計だけの目標を設定できます。実績との差がホームと総評に表示されます。</p>
       <div style="display:flex;gap:10px;align-items:center">
         <input type="text" id="monthlyGoalInput" inputmode="numeric" placeholder="例:300000"
           style="flex:1;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card2);color:var(--text);font-size:15px;font-family:inherit;-webkit-appearance:none">
         <span style="font-size:12px;color:var(--muted)">円</span>
       </div>
-      <div style="margin-top:14px"><button class="btn btn-gold" id="saveMonthlyGoal">月の目標を保存</button></div>
+      <div style="margin-top:14px"><button class="btn btn-gold" id="saveMonthlyGoal">月の予算を保存</button></div>
     </div>
     <div class="card">
-      <h2>ジャンル別の目標金額(月)</h2>
+      <h2>カテゴリごとの予算</h2>
       <div id="goalRows"></div>
-      <div style="margin-top:14px"><button class="btn btn-gold" id="saveGoals">目標を保存</button></div>
+      <div style="margin-top:14px"><button class="btn btn-gold" id="saveGoals">カテゴリ予算を保存</button></div>
     </div>
     <div class="card">
-      <h2>ジャンルの追加</h2>
+      <h2>カテゴリを追加</h2>
       <div style="display:flex;gap:10px">
         <input type="text" id="newGenre" maxlength="12" placeholder="例:教育費・サブスク"
           style="flex:1;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card2);color:var(--text);font-size:15px;font-family:inherit;-webkit-appearance:none">
@@ -283,7 +291,7 @@ nav button.on{color:var(--gold)}
       <div id="customGenreList" style="margin-top:6px"></div>
     </div>
     <div class="card">
-      <h2>他の端末と共有(バックアップ)</h2>
+      <h2>データの読み込み・バックアップ</h2>
       <p style="font-size:12px;color:var(--muted);margin-bottom:12px">全ての月の支出・収入・目標・ジャンル設定を1つのCSVに書き出せます。そのファイルを別の端末で読み込めば同じ内容を復元できます。</p>
       <button class="btn btn-gold" id="exportAllBtn">全データをCSVで書き出す</button>
       <button class="btn btn-ghost" id="importAllBtn">バックアップCSVを読み込む</button>
@@ -299,9 +307,9 @@ nav button.on{color:var(--gold)}
 
 <nav>
   <button class="on" data-tab="home"><span class="ico">🏠</span>ホーム</button>
-  <button data-tab="graph"><span class="ico">📊</span>グラフ</button>
+  <button data-tab="graph"><span class="ico">📊</span>レポート</button>
   <button data-tab="list"><span class="ico">📋</span>明細</button>
-  <button data-tab="set"><span class="ico">⚙️</span>設定</button>
+  <button data-tab="set"><span class="ico">⚙️</span>予算・設定</button>
 </nav>
 
 <input type="file" id="csvFile" accept=".csv,text/csv" style="display:none">
@@ -806,110 +814,48 @@ function genMonthlyComment(mk){
   return lines;
 }
 
+function jumpTo(tab){
+  const button=document.querySelector('nav button[data-tab="'+tab+'"]');
+  if(button) button.click();
+}
+function bindDashboardActions(root){
+  root.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>jumpTo(b.dataset.jump));
+  root.querySelectorAll('[data-import]').forEach(b=>b.onclick=()=>backupFile.click());
+  root.querySelectorAll('[data-csv]').forEach(b=>b.onclick=()=>csvFile.click());
+  root.querySelectorAll('[data-category]').forEach(b=>b.onclick=()=>showGenreDetail(b.dataset.category));
+  root.querySelectorAll('[data-expense-index]').forEach(b=>b.onclick=()=>editTx(Number(b.dataset.expenseIndex)));
+}
 function renderHome(){
-  const el = document.getElementById("homeBody");
+  const el=document.getElementById('homeBody');
   if(!curMonth){
-    el.innerHTML = `<div class="card"><div class="empty">まだデータがありません。<br>カード明細のCSVを読み込むと<br>月ごとの生活費が集計されます。<br>以前のバックアップは「設定」から復元できます。</div>
-      <button class="btn btn-gold" id="csvBtn1">CSVを読み込む</button></div>`;
-    const restore = document.createElement("button");
-    restore.className = "btn btn-gold";
-    restore.textContent = "バックアップCSVを読み込む";
-    restore.onclick = () => backupFile.click();
-    el.querySelector(".card").appendChild(restore);
-    document.getElementById("csvBtn1").textContent = "新しい支出明細CSVを読み込む";
-    document.getElementById("csvBtn1").onclick = () => csvFile.click();
-    return;
+    el.innerHTML=`<div class="page-heading"><div><p class="eyebrow">MY HOUSEHOLD</p><h2>家計のホーム</h2></div></div>
+      <div class="welcome"><h2>お金の流れを、ここから。</h2><p>収入と支出、予算の残りをひとつの画面で確認できます。<br>以前のデータは、バックアップCSVから引き継げます。</p>
+      <div class="quick-actions"><button class="btn btn-gold" data-import>バックアップCSVを読み込む</button><button class="btn btn-ghost" data-jump="list">手入力ではじめる</button></div><button class="text-link" data-csv>カードなどの支出明細CSVを読み込む →</button></div>
+      <div class="summary-grid"><div class="summary-card"><p class="summary-label">収入</p><div class="summary-value">—</div><p class="summary-foot">給料・ボーナスなど</p></div><div class="summary-card"><p class="summary-label">支出</p><div class="summary-value">—</div><p class="summary-foot">日々のお買い物・固定費</p></div><div class="summary-card balance"><p class="summary-label">収支</p><div class="summary-value">—</div><p class="summary-foot">収入 − 支出</p></div></div>
+      <div class="card"><h2>データの保存について</h2><p class="note">入力・読み込みしたデータは、このブラウザに保存されます。端末を替えるときは「予算・設定」からCSVを書き出してください。GitHubへの送信や自動同期は行いません。</p></div>`;
+    bindDashboardActions(el);return;
   }
-  const total = totalOf(curMonth);
-  const pk = prevKey(curMonth);
-  let diffHtml = `<span class="diff flat">前月データなし</span>`;
-  if(pk){
-    const d = total - totalOf(pk);
-    diffHtml = d === 0 ? `<span class="diff flat">前月と同額</span>`
-      : d > 0 ? `<span class="diff up">前月比 +${d.toLocaleString()}円</span>`
-      : `<span class="diff down">前月比 −${Math.abs(d).toLocaleString()}円</span>`;
-  }
-  const goalTotal = getGenres().reduce((s,g) => s + (goals[g] || 0), 0);
-  let budgetLine = "";
-  if(goalTotal > 0){
-    const rest = goalTotal - total;
-    budgetLine = rest >= 0
-      ? `<div class="budget-note">ジャンル目標合計 ${yen(goalTotal)} まで残り <b>${yen(rest)}</b></div>`
-      : `<div class="budget-note">ジャンル目標合計 ${yen(goalTotal)} を <b class="over">${yen(-rest)} オーバー</b></div>`;
-  }
-  let monthlyGoalLine = "";
-  if(monthlyGoal > 0){
-    const mrest = monthlyGoal - total;
-    monthlyGoalLine = mrest >= 0
-      ? `<div class="budget-note">🎯 月の目標 ${yen(monthlyGoal)} まで残り <b>${yen(mrest)}</b></div>`
-      : `<div class="budget-note">🎯 月の目標 ${yen(monthlyGoal)} を <b class="over">${yen(-mrest)} オーバー</b></div>`;
-  }
-
-  const byG = sumByGenre(curMonth);
-  const maxAmt = Math.max(...getGenres().map(g => byG[g]), 1);
-  const gauges = getGenres().filter(g => byG[g] > 0 || goals[g] > 0).map(g => {
-    const a = byG[g], goal = goals[g] || 0;
-    let bar;
-    if(goal > 0){
-      const scaleMax = Math.max(a, goal) * 1.08;
-      const tickPct = goal / scaleMax * 100;
-      const fillPct = Math.min(a, goal) / scaleMax * 100;
-      const overPct = a > goal ? (a - goal) / scaleMax * 100 : 0;
-      bar = `<div class="g-bar">
-        <div class="g-fill" style="width:${fillPct}%;background:${colorOf(g)}"></div>
-        ${overPct ? `<div class="g-over" style="left:${fillPct}%;width:${overPct}%"></div>` : ""}
-        <div class="g-tick" style="left:${tickPct}%"></div></div>`;
-    }else{
-      bar = `<div class="g-bar"><div class="g-fill" style="width:${a/maxAmt*100}%;background:${colorOf(g)}"></div></div>`;
-    }
-    const overLabel = goal > 0 && a > goal ? `<span class="over-label">+${(a-goal).toLocaleString()}</span>` : "";
-    return `<div class="gauge" data-g="${esc(g)}" style="cursor:pointer">
-      <div class="g-head">
-        <div class="g-name"><span class="g-dot" style="background:${colorOf(g)}"></span>${esc(g)}</div>
-        <div class="g-amt num">${yen(a)}${goal ? ` <span class="goal">/ ${yen(goal)}</span>` : ""}${overLabel}</div>
-      </div>${bar}</div>`;
-  }).join("");
-
-  const bankT = (months[curMonth] || []).filter(x => x.src === "銀行").reduce((s,x) => s + x.amt, 0);
-  const srcLine = bankT > 0
-    ? `<div class="budget-note">💳 クレカ <b>${yen(total - bankT)}</b>・🏦 銀行 <b>${yen(bankT)}</b></div>` : "";
-
-  const incTotal = incomeTotal(curMonth);
-  const incByT = incomeByType(curMonth);
-  const net = incTotal - total;
-  const incRows = INCOME_TYPES.filter(t => incByT[t] > 0).map(t =>
-    `<div class="goal-row"><div class="g-name"><span class="g-dot" style="background:${INCOME_COLORS[t]}"></span>${t}</div>
-      <div class="num" style="font-weight:800">${yen(incByT[t])}</div></div>`).join("");
-  const balanceLine = incTotal > 0
-    ? `<div class="budget-note">収支 <b style="color:${net >= 0 ? "var(--green)" : "var(--red)"}">${net >= 0 ? "+" : "−"}${yen(Math.abs(net))}</b>(収入${yen(incTotal)} − 支出${yen(total)})</div>` : "";
-
-  const comment = genMonthlyComment(curMonth);
-  const commentHtml = comment.length
-    ? comment.map(c => `<div class="comment-line"><span class="ic">${c.ic}</span><span>${c.html}</span></div>`).join("")
-    : '<div class="empty" style="padding:16px 0">データが揃うと総評が表示されます</div>';
-
-  el.innerHTML = `
-    <div class="card">
-      <h2>${fmtMonth(curMonth)}の総評</h2>
-      ${commentHtml}
-    </div>
-    <div class="card">
-      <h2>${fmtMonth(curMonth)}の支出</h2>
-      <div class="total-line"><div class="total-amt num"><small>¥</small>${total.toLocaleString()}</div>${diffHtml}</div>
-      ${srcLine}
-      ${monthlyGoalLine}
-      ${budgetLine}
-      ${balanceLine}
-    </div>
-    <div class="card">
-      <h2>${fmtMonth(curMonth)}の収入</h2>
-      <div class="total-line"><div class="total-amt num" style="color:var(--green)"><small>¥</small>${incTotal.toLocaleString()}</div></div>
-      ${incRows || '<div class="empty" style="padding:16px 0">明細タブから収入を追加できます</div>'}
-    </div>
-    <div class="card"><h2>ジャンル別(| は目標)タップで詳細</h2>${gauges || '<div class="empty">明細がありません</div>'}</div>
-    <button class="btn btn-gold" id="csvBtn1">CSVを読み込む(翌月分の追加など)</button>`;
-  document.getElementById("csvBtn1").onclick = () => csvFile.click();
-  el.querySelectorAll(".gauge").forEach(n => n.onclick = () => showGenreDetail(n.dataset.g));
+  const total=totalOf(curMonth),inc=incomeTotal(curMonth),net=inc-total,hasIncome=(incomes[curMonth]||[]).length>0;
+  const previous=prevKey(curMonth),diff=previous ? total-totalOf(previous):null;
+  const byG=sumByGenre(curMonth),categories=getGenres().filter(g=>byG[g]!==0).sort((a,b)=>byG[b]-byG[a]);
+  const positive=categories.filter(g=>byG[g]>0),positiveTotal=positive.reduce((n,g)=>n+byG[g],0);
+  let end=0;const stops=positive.map(g=>{const start=end;end+=byG[g]/positiveTotal*100;return colorOf(g)+' '+start+'% '+end+'%';});
+  const categoryRows=categories.map(g=>`<button class="category-row" data-category="${esc(g)}"><span><i class="g-dot" style="background:${colorOf(g)}"></i>${esc(g)}</span><strong class="num">${yen(byG[g])}</strong></button>`).join('');
+  const rest=monthlyGoal-total;
+  const budget=monthlyGoal>0 ? `<div class="budget-top"><span>${rest>=0?'あと使える金額':'予算オーバー'}</span><span class="budget-big num ${rest<0?'negative':''}">${yen(Math.abs(rest))}</span></div><div class="budget-track"><span style="width:${Math.max(0,Math.min(100,total/monthlyGoal*100))}%;background:${rest<0?'var(--red)':'var(--gold)'}"></span></div><div class="budget-meta"><span>支出 ${yen(total)}</span><span>月の予算 ${yen(monthlyGoal)}</span></div>` : `<p class="note">月の予算を設定すると、使える残りの金額がここに表示されます。</p><button class="text-link" data-jump="set">月の予算を設定する →</button>`;
+  const targetRows=getGenres().filter(g=>goals[g]>0).map(g=>{const used=byG[g]||0,target=goals[g],over=used>target;return `<div class="gauge"><div class="g-head"><button class="text-link" data-category="${esc(g)}">${esc(g)}</button><span class="g-amt num">${yen(used)} <span class="goal">/ ${yen(target)}</span></span></div><div class="budget-track" style="height:7px;margin:7px 0"><span style="width:${Math.max(0,Math.min(100,used/target*100))}%;background:${over?'var(--red)':colorOf(g)}"></span></div><p class="summary-foot ${over?'negative':''}">${over?'予算を '+yen(used-target)+' 超過':'残り '+yen(target-used)}</p></div>`;}).join('');
+  const sortable=d=>String(d||'').split(/[\/-]/).map(x=>x.padStart(2,'0')).join('-');
+  const recent=(months[curMonth]||[]).map((x,i)=>({...x,index:i})).sort((a,b)=>sortable(b.d).localeCompare(sortable(a.d))).slice(0,5);
+  const recentHtml=recent.map(x=>`<button class="category-row" data-expense-index="${x.index}"><span style="display:block;min-width:0"><span style="display:block;overflow-wrap:anywhere">${esc(x.store)||'店名なし'}</span><small class="summary-foot">${esc(x.d)} ・ ${esc(x.genre)}</small></span><strong class="num">${yen(x.amt)}</strong></button>`).join('');
+  const comment=genMonthlyComment(curMonth).map(c=>`<div class="comment-line"><span class="ic">${c.ic}</span><span>${c.html}</span></div>`).join('');
+  el.innerHTML=`<div class="page-heading"><div><p class="eyebrow">MONTHLY OVERVIEW</p><h2>${fmtMonth(curMonth)}の家計</h2></div><div class="quick-actions"><button class="btn btn-ghost" data-import>CSVを復元</button><button class="btn btn-gold" data-jump="list">＋ 収入・支出を入力</button></div></div>
+    <div class="summary-grid"><div class="summary-card"><p class="summary-label">収入</p><div class="summary-value num positive">${hasIncome?yen(inc):'未入力'}</div><p class="summary-foot">${hasIncome?(incomes[curMonth]||[]).length+'件の入金':'給料などを登録してください'}</p></div><div class="summary-card"><p class="summary-label">支出</p><div class="summary-value num">${yen(total)}</div><p class="summary-foot">${diff===null?'前月のデータなし':diff===0?'前月と同じ': '前月より '+yen(Math.abs(diff))+(diff>0?' 増加':' 減少')}</p></div><div class="summary-card balance"><p class="summary-label">収支（収入 − 支出）</p><div class="summary-value num ${hasIncome?(net>=0?'positive':'negative'):''}">${hasIncome?(net>0?'+':'')+yen(net):'—'}</div><p class="summary-foot">${hasIncome?'登録した明細から集計':'収入を登録すると表示されます'}</p></div></div>
+    <div class="dashboard-grid"><div class="card wide"><div class="card-heading"><h2>今月の予算</h2><button class="text-link" data-jump="set">予算を変更 →</button></div>${budget}</div>
+    <div class="card"><div class="card-heading"><h2>何に使った？</h2><button class="text-link" data-jump="graph">レポート →</button></div><div class="split-chart"><div class="donut" role="img" aria-label="カテゴリ別の支出内訳" style="background:${stops.length?'conic-gradient('+stops.join(',')+')':'var(--line)'}"><div class="donut-hole"><small>支出合計</small><strong class="num">${yen(total)}</strong></div></div><div class="category-list">${categoryRows||'<p class="note">支出はまだありません</p>'}</div></div>${categories.some(g=>byG[g]<0)?'<p class="note">円グラフはプラスのカテゴリのみ。支出合計には返金も反映しています。</p>':''}<p class="note">カテゴリを押すと、内訳と月ごとの推移が見られます。</p></div>
+    <div class="card"><div class="card-heading"><h2>カテゴリ別の予算</h2><button class="text-link" data-jump="set">設定 →</button></div>${targetRows||'<p class="note">食費や日用品など、管理したいカテゴリに予算を設定できます。</p>'}</div>
+    <div class="card"><div class="card-heading"><h2>最近の支出</h2><button class="text-link" data-jump="list">すべて見る →</button></div>${recentHtml||'<p class="note">明細はまだありません</p>'}<button class="text-link" data-csv>支出明細CSVを追加 →</button></div>
+    <details class="card"><summary>家計の振り返り</summary>${comment||'<p class="note">明細が増えると振り返りが表示されます。</p>'}<p class="note">登録済みの明細を比較しています。入力途中の月は金額が変わります。</p></details></div>`;
+  bindDashboardActions(el);
 }
 
 /* ジャンル詳細モード:月ごとの推移とそのジャンルの明細 */
@@ -1192,6 +1138,7 @@ function renderGraph(){
   cmpBody.innerHTML = `<table class="cmp">${rowsHtml}</table>`;
 }
 
+document.getElementById("txSearch").addEventListener("input", renderList);
 let listFilter = null; // null = すべて
 let srcFilter = null;  // null / "クレカ" / "銀行"
 function renderList(){
@@ -1219,7 +1166,8 @@ function renderList(){
     b.onclick = () => { srcFilter = b.dataset.s || null; renderList(); });
   if(listFilter && !getGenres().includes(listFilter)) listFilter = null;
   const match = x => (!listFilter || x.genre === listFilter) &&
-                     (!srcFilter || (x.src || "クレカ") === srcFilter);
+                     (!srcFilter || (x.src || "クレカ") === srcFilter) &&
+    (!document.getElementById("txSearch").value.trim() || (x.store+" "+(x.memo||"")).toLocaleLowerCase().includes(document.getElementById("txSearch").value.trim().toLocaleLowerCase()));
   const present = getGenres().filter(g => all.some(x => x.genre === g));
   chips.innerHTML = `<button data-g="" class="${!listFilter ? "on" : ""}">すべて</button>` +
     present.map(g => `<button data-g="${esc(g)}" class="${listFilter === g ? "on" : ""}">${esc(g)}</button>`).join("");
